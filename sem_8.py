@@ -105,5 +105,8 @@ def find_by_attribute (filename :str, option:bool ):
         if option:
             id=int ( input ("Введите номер записи , которую следует изменить "))
             return data[id-1]
-        
-main()
+
+
+
+if __name__ == '__main__':        
+    main()
