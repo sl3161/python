@@ -99,8 +99,9 @@ def find_by_attribute (filename :str, option:bool ):
             print (" ")
             return  
         else :
-            a = str(result).split ("), (")
-            print ('\n'.join(map(str, a)))
+            
+            for idx, val in enumerate(data):
+                if attr in val: print (f' {idx} {val}' )
             
         if option:
             id=int ( input ("Введите номер записи , которую следует изменить "))
@@ -110,3 +111,6 @@ def find_by_attribute (filename :str, option:bool ):
 
 if __name__ == '__main__':        
     main()
+
+
+    
